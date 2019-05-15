@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Hangman</title>
+  <meta name="description" content="Hangman">
+  <meta name="author" content="Patrick Hardin">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="flexbox">
+    <header>
+      <div class="header-container">
+        <div class="header-section header-section-left">
+          <ul class="header-item" id="score"></ul>
+        </div>
+        <div class="header-section header-section-center">
+          <div class="history-container" id="history-container">
+            <span class="history-label" id="history-label"></span>
+            <ul class="history-letters" id="history-letters"></ul>
+          </div>
+        </div>
+        <div class="header-section header-section-right">
+          <ul class="header-item" id="record"></ul>
+        </div>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="game-container">
+        <ul class="game-letters" id="letters"></ul>
+        <div class="game-messages" id="messages"></div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/patrick-hardin/hangman/">Source Code</a>
+    </footer>
+  </div>
+  <script src="javascript/game.js"></script>
+  <script src="javascript/events.js"></script>
+</body>
+
+</html>
