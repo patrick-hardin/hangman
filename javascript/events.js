@@ -15,6 +15,8 @@ document.onkeyup = function (event) {
     output.game = Hangman.init();
     output.record = Hangman.record;
     output.messages = [];
+    let history = document.getElementById("history-container");
+    removeChildren(history);
     updateDOM(output);
     return;
   }
